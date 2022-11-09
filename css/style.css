@@ -78,11 +78,8 @@ body {
 
 
 .img-sub-hero {
-  margin: 2rem;
   background-size: cover;
-  /* background-image: var(black); */
-  border: 10px solid red;
-   /* position: absolute;  */
+  justify-content: center;
 }
 
 /* game info  list */
@@ -111,7 +108,6 @@ body {
 
 .thumb-container h2 {
   font-size: 2rem;
-
 }
 
 .h2-text-container {
@@ -134,9 +130,6 @@ body {
 .end-section {
   padding: 2rem;
   position: relative;
-  /* border: red; */
-  /* border: 20px;
-   border-color: red; */
 }
 
 .end-photo {
@@ -183,10 +176,8 @@ body {
   height: 5rem;
   margin: auto;
   font-size: 20px;
-  /* border: 3px dashed #1c87c9; */
   align-items: center;
   justify-content: space-between;
-  /* padding: 0 10rem; */
 }
 
 .text-logo-container {
@@ -195,7 +186,6 @@ body {
   width: 50%;
   height: 5rem;
   margin: auto;
-  /* border: 3px dashed #1c87c9; */
   align-items: center;
   justify-content: center;
   text-align: center;
