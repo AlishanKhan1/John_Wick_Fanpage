@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap');
+
+
 * {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -7,7 +11,6 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  /* scroll-padding-top: 2rem; */
 }
 
 body {
@@ -15,14 +18,15 @@ body {
   overflow-x: hidden;
 }
 
+.hero-pic{
+  width: 100%;
+  height: auto;
+}
 
 
 /* working on nav bar */
 
 .nav-bar {
-  /* display: flex;
-   align-items: center;
-   justify-content: center; */
   position: relative;
   display: flex;
   align-items: center;
@@ -37,7 +41,6 @@ body {
   top: 0;
   width: 100%;
   z-index: 999;
-  /* opacity: 0.5; */
 }
 
 .logo {
@@ -45,7 +48,6 @@ body {
   display: block;
   font-size: 2rem;
   text-align: left;
-  /* margin: 15px 0 15px 15px; */
   background-size: contain;
   color: red;
   padding: 5px;
@@ -55,51 +57,53 @@ body {
   background-color: red;
   color: black;
   font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+
 }
 
 /* working on sub hero */
 .sub-hero{
-  /* position: absolute; */
+  position: relative;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+
+.sub-hero-pic{
+  width: 100%;
+  height: 100%;
 }
 
 .sub-header{
   color: white; 
-  /* position: absolute; */
-  bottom: 8rem;
-  right: 2rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 10rem;
   font-size: 2rem; 
 }
 
 .sticky .hero-img {
   margin-top: 5rem;
+  
 }
 
 
-
 .img-sub-hero {
-  background-size: cover;
-  justify-content: center;
+  border: 10px solid red;
 }
 
 /* game info  list */
 
 .card-gallery {
-  padding: 1rem;
+ padding: 1rem;
 }
 
 .gallery-container {
-  /* display: grid;
-    padding: 2rem; */
+  /* height: 400px; */
+  /* height: auto; */
+  /* width: auto; */
   display: grid;
-  /* display is set to grid layout */
-  height: 400px;
-  align-content: center;
-  /* vertically aligns objects to the center */
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
-
-  /* background colour is set */
   padding: 10px;
   margin-top: 1rem;
 }
@@ -113,7 +117,6 @@ body {
 .h2-text-container {
   display: flexbox;
   background-color: red;
-  /* font-size: 20rem; */
   text-align: center;
   padding: none;
 }
@@ -128,13 +131,17 @@ body {
 /* end section */
 
 .end-section {
-  padding: 2rem;
   position: relative;
+  padding: 0 2rem;
 }
 
 .end-photo {
   border: 10px solid red;
+}
 
+.end-pic{
+  width: 100%;
+  height: 100%;
 }
 
 .Message {
@@ -182,11 +189,110 @@ body {
 
 .text-logo-container {
   font-size: small;
+  padding: 0 4rem;
   display: flex;
-  width: 50%;
+  width: 100%;
   height: 5rem;
   margin: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+
+.legal-text-footer{
+  padding: 3rem 0;
+}
+
+
+
+/* makeing it responsive */
+
+
+
+@media screen and (max-width: 882px){
+
+/* header NEW GUNS */
+
+  .sub-header{
+    bottom: 2rem;
+    left: 6rem;
+    font-size: 1rem;
+    color: rgb(27, 186, 240);
+  }
+
+  /* GAME INFO LIST */
+
+  .gallery-container{
+    display:inline-block; 
+  }
+
+
+  .img{
+    display: flex;
+    justify-content: center;
+  }
+
+  .h2-text-container{
+    margin: 0 4.8rem;
+  }
+
+.about-game{
+    text-align: center;   
+  }
+
+
+  /* HEADER COMINGSOON  */
+
+  .Message{
+    bottom: 3.5rem;
+    right: 7rem;
+    font-size: 1.5rem;
+    color: rgb(27, 186, 240);
+  }
+  
+  /* footer */
+
+  .text-logo-container{
+    padding: 2rem;
+    width: 100%;
+   } 
+}
+
+
+  /* for very small device */
+
+
+  @media screen and (max-width: 550px){
+
+    /* header new guns */
+
+  .sub-header{
+    bottom: 1rem;
+    left: 3.5rem;
+    font-size: small;
+  }  
+
+  .img-sub-hero {
+    border: 5px solid red;
+  }
+
+  .Message{
+    bottom: 2.8rem;
+    right: 4.5rem;
+    font-size: 1rem;
+    color: rgb(27, 186, 240);
+  }
+
+  .end-photo {
+    border: 5px solid red;
+  }
+
+  /* footer */
+
+  .text-logo-container{
+    padding-top: 5px;
+    width: 100%;
+    font-size: 8px;
+   } 
+
+  } 
